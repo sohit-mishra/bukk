@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Bukk</title>
+  </head>
+  <body onload="inputchecked()">
+    <nav>
+      <div class="container">
+        <a href="#" class="logo"><img src="/img/logo.png" alt="logo" /></a>
+        <a href="javascript:void(0);" class="menu_bar" onclick="menuBar()"><i class="fa-solid fa-bars"></i></a>
+        <div class="nav_right_side">
+          <ol>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/search.html">Recipes</a></li>
+            <li><a href="/social.html">Social</a></li>
+            <li><a href="/catering.html">Catering</a></li>
+            <li><a href="/shop.html" class="active">Shop</a></li>
+          </ol>
+
+          <div class="login_btn">
+            <a href="/login.html">Login</a>
+            <a href="/signup.html" class="active">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="social shop_banner">
+      <div class="container">
+        <div class="shop_header">
+          <div class="search_bar">
+            <input type="text" placeholder="Search..." value="" onkeyup="searchRecipe()"/>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="cart_count">
+            <i class="fa-brands fa-opencart"></i> <span>0</span>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="filters mobilefilt">
+            <h4>Filters</h4>
+            <div class="filters_content">
+              <h5>Category</h5>
+
+              <label class="cust_checkbox"
+                >Cakes & cookies
+                <input type="checkbox" id="Cakes&cookies"/>
+                <span class="checkmark"></span> 
+                </label>
+
+              <label class="cust_checkbox"
+                >Desserts
+                <input type="checkbox" id="Desserts"/>
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="cust_checkbox"
+              >Drinks
+              <input type="checkbox" id="Drinks"/>
+              <span class="checkmark"></span> 
+              </label>
+              
+            <label class="cust_checkbox"
+              >Feasts
+              <input type="checkbox" id="Feasts"/>
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="cust_checkbox"
+            >Meals
+            <input type="checkbox" id="Meals"/>
+            <span class="checkmark"></span> 
+            </label>
+            
+          <label class="cust_checkbox"
+            >Other
+            <input type="checkbox" id="Other"/>
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="cust_checkbox"
+          >Rice set
+          <input type="checkbox" id="Riceset"/>
+          <span class="checkmark"></span> 
+          </label>
+          
+        <label class="cust_checkbox"
+          >Sauces
+          <input type="checkbox" id="Sauces"/>
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="cust_checkbox"
+        >Snacks
+        <input type="checkbox" id="Snacks"/>
+        <span class="checkmark"></span> 
+        </label>
+        
+            </div>
+            <div class="filters_content">
+              <h5>Availability</h5>
+              <label class="cust_checkbox"
+                >Available in Shop
+                <input type="checkbox" />
+                <span class="checkmark"></span> 
+                </label>
+
+              <label class="cust_checkbox"
+                >Available in Catering
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+          </div>
+          <div class="search_result">
+            <h1>Search results (31) <i class="fa-solid fa-filter" onclick="filterMenu()"></i></h1>
+            <div class="shop_search">
+                <a href="/shop/9f91aedd-c537-4d87-bdc1-3fd828654038.html" class="shop_card">
+                    <img src="/img/logo_transparent_background_2.png" alt="" />
+                    <h5>Sweet Soy Pork Knuckle (Chu Kiok)
+                    </h5>
+                    <div class="star_rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price_desc">
+                      <p>$25.00</p>
+                      <button>
+                        Add to cart <i class="fa-brands fa-opencart"></i>
+                      </button>
+                    </div>
+                  </a>
+      
+                  <a href="/shop/53585825-b179-433b-9b83-db91abcf17fb.html" class="shop_card">
+                    <img src="/img/logo_transparent_background_2.png" alt="" />
+                    <h5>Sambal Garlic (Sambal Bawang)
+                    </h5>
+                    <div class="star_rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price_desc">
+                      <p>$4.99</p>
+                      <button>
+                        Add to cart <i class="fa-brands fa-opencart"></i>
+                      </button>
+                    </div>
+                  </a>
+
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_row">
+          <div class="foot_col">
+            <img class="brand_img" src="/img/logo.png" alt="brand logo" />
+            <ul class="brand_logo">
+              <li>
+                <img src="/img/mail.svg" alt="mail" />contactus@bukk.com.au
+              </li>
+              <li><img src="/img/phone.svg" alt="phone" />+61 412 477 138</li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Cuisine</h6>
+            <ul>
+              <li><a href="/search.html?t_General">General</a></li>
+              <li><a href="/search.html?Non_Vegan">Non-Vegan</a></li>
+              <li><a href="/search.html?Vegan">Vegan</a></li>
+              <li><a href="/search.html?Vegetarian">Vegetarian</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Meals</h6>
+            <ul>
+              <li><a href="/search.html?Breakfast">Breakfast</a></li>
+              <li><a href="/search.html?Brunch">Brunch</a></li>
+              <li><a href="/search.html?Desert">Desert</a></li>
+              <li><a href="/search.html?Dinner">Dinner</a></li>
+              <li><a href="/search.html?Drinks">Drinks</a></li>
+              <li><a href="/search.html?c_General">General</a></li>
+              <li><a href="/search.html?Lunch">Lunch</a></li>
+              <li><a href="/search.html?Sauces">Sauces</a></li>
+              <li><a href="/search.html?Snacks">Snacks</a></li>
+              <li><a href="/search.html?Tapas">Tapas</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Shop</h6>
+            <ul>
+              <li><a href="/shop/search.html?Cakes&cookies">Cakes & cookies</a></li>
+              <li><a href="/shop/search.html?Desserts">Desserts</a></li>
+              <li><a href="/shop/search.html?Drinks">Drinks</a></li>
+              <li><a href="/shop/search.html?Feasts">Feasts</a></li>
+              <li><a href="/shop/search.html?Meals">Meals</a></li>
+              <li><a href="/shop/search.html?Other">Other</a></li>
+              <li><a href="/shop/search.html?Riceset">Rice set </a></li>
+              <li><a href="/shop/search.html?Sauces">Sauces</a></li>
+              <li><a href="/shop/search.html?Snacks">Snacks</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Pages</h6>
+            <ul>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/contact-us.html">Contact us</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+              <li>
+                <a href="/terms-and-condition.html">Term and conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Get in touch</h6>
+            <a href="https://www.instagram.com/depotbuk.k/"
+              ><img src="/img/insta.png" alt="insta"
+            /></a>
+            <a href="https://www.facebook.com/Depot-BukK-240741843161215/"
+              ><img src="/img/fb.png" alt="fb"
+            /></a>
+            <a href="https://wa.me/0412477138"
+              ><img src="/img/whatsapp.png" alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>

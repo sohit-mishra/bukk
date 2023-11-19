@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Bukk</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo"><img src="../img/logo.png" alt="logo" /></a>
+        <a href="javascript:void(0);" class="menu_bar" onclick="menuBar()"><i class="fa-solid fa-bars"></i></a>
+        <div class="nav_right_side">
+          <ol>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/search.html">Recipes</a></li>
+            <li><a href="../social.html">Social</a></li>
+            <li><a href="../catering.html">Catering</a></li>
+            <li><a href="../shop.html" class="active">Shop</a></li>
+          </ol>
+
+          <div class="login_btn">
+            <a href="../login.html">Login</a>
+            <a href="../signup.html" class="active">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="user">
+      <div class="container">
+        <div class="user_section">
+          <div class="user_left">
+            <img src="/img/profile/3.jpeg" alt="" />
+            <h2>Raviii Bhushan</h2>
+            <div class="username">@ravibhushan293</div>
+            <button><i class="fa-solid fa-rss"></i> Follow</button>
+            <div class="user_desc">He is the leader
+            </div>
+          </div>
+          <div class="user_right tabside">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="user(event,'Recipe')"
+                id="defaultOpenUser"
+              >Recipes (7)
+              </button>
+              <button class="tablinks" onclick="user(event,'Followers')">
+                Followers (1)
+              </button>
+              <button class="tablinks" onclick="user(event,'Following')">
+                Following (2)
+              </button>
+            </div>
+            <div class="tabcontentbox">
+              <div class="tabcontent" id="Recipe">
+                <div class="recipes_card">
+                  <a href="/recipe/57a2ba93-2f31-48f4-ade0-97d81c83a638.html">
+                    <div class="recipes_img">
+                    <img src="/img/macarons.jpeg" alt="Desert" />
+                    <span><i class="fa-regular fa-heart"></i></span></div>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Desert</span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                      </div>
+                      <b>Macaorins</b>
+                    </div>
+                  </a>
+        
+                  <a href="/recipe/82ed1f15-0794-4413-8d2b-70ddaa15c19b.html">
+                    <div class="recipes_img">
+                      <img src="/img/omelette.jpeg" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Drinks</span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                      </div>
+                      <b>General</b>
+                    </div>
+                  </a>
+        
+                  <a href="/recipe/06e2b965-f737-4081-b90c-17ded0e481c7.html">
+                    <div class="recipes_img">
+                      <img src="/img/martini.jpeg" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <span></span>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Drinks </span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                      </div>
+                      <b>Espresso Martini </b>
+                    </div>
+                  </a>
+        
+                 <a href="/recipe/4ee78c3e-3007-4f64-b44c-c8b558f3c5e4.html">
+                    <div class="recipes_img">
+                      <img src="/img/test.png" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <span></span>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Breakfast </span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                      </div>
+                      <b>test indegret edit</b>
+                    </div>
+                  </a>
+
+                  <a href="/recipe/283f3178-57c1-4dfc-904e-57011e76c47a.html">
+                    <div class="recipes_img">
+                      <img src="/img/mustard.jpeg" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Tapas</span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <b>Key West Shrimp with Key Lime Mustard Sauce</b>
+                    </div>
+                  </a>
+        
+                  <a href="/recipe/2d149f98-a5b9-41a6-b6c9-a6773ae09d62.html">
+                    <div class="recipes_img">
+                    <img src="/img/soda.jpeg" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Snacks</span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <b>Levain Bakery Chocolate Chip Crush Cookies</b>
+                    </div>
+                  </a>
+        
+                  <a href="/recipe/fae8cfcd-f031-4cbe-9c98-56ede0d5a0e5.html">
+                    <div class="recipes_img">
+                      <img src="/img/soda.jpeg" alt="Desert" />
+                      <span><i class="fa-regular fa-heart"></i></span></div>
+                    <div class="description">
+                      <div class="recipes_rating">
+                        <span>Drinks </span>
+                        <div class="star_rating">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <b>Skittles Soda</b>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="tabcontent" id="Followers">
+                <a href="/user/gaetanogallo.html" class="author">
+                  <div class="author_infor">
+                    <img src="../img/profile/2.png" alt="" />
+                    <div class="infor">
+                      <h5>Gaetano Gallo</h5>
+                      <div class="author_id">@gaetanogallo</div>
+                    </div>
+                  </div>
+                  <div class="autor_follwer">
+                    <button><i class="fa-solid fa-rss"></i> Follow</button>
+                  </div>
+                </a>
+              </div>
+              <div class="tabcontent" id="Following">
+
+                <a href="/user/mischateh175.html" class="author">
+                  <div class="author_infor">
+                    <img src="../img/profile/5.jpeg" alt="" />
+                    <div class="infor">
+                      <h5>Mischa Teh</h5>
+                      <div class="author_id">@mischateh175</div>
+                    </div>
+                  </div>
+                  <div class="autor_follwer">
+                    <button><i class="fa-solid fa-rss"></i> Follow</button>
+                  </div>
+                </a>
+
+                <a href="/user/8826047538o.html" class="author">
+                  <div class="author_infor">
+                    <img src="../img/profile/4.jpg" alt="" />
+                    <div class="infor">
+                      <h5>Ram Pandey</h5>
+                      <div class="author_id">@8826047538o</div>
+                    </div>
+                  </div>
+                  <div class="autor_follwer">
+                    <button><i class="fa-solid fa-rss"></i> Follow</button>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer_row">
+          <div class="foot_col">
+            <img class="brand_img" src="/img/logo.png" alt="brand logo" />
+            <ul class="brand_logo">
+              <li>
+                <img src="/img/mail.svg" alt="mail" />contactus@bukk.com.au
+              </li>
+              <li><img src="/img/phone.svg" alt="phone" />+61 412 477 138</li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Cuisine</h6>
+            <ul>
+              <li><a href="/search.html?t_General">General</a></li>
+              <li><a href="/search.html?Non_Vegan">Non-Vegan</a></li>
+              <li><a href="/search.html?Vegan">Vegan</a></li>
+              <li><a href="/search.html?Vegetarian">Vegetarian</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Meals</h6>
+            <ul>
+              <li><a href="/search.html?Breakfast">Breakfast</a></li>
+              <li><a href="/search.html?Brunch">Brunch</a></li>
+              <li><a href="/search.html?Desert">Desert</a></li>
+              <li><a href="/search.html?Dinner">Dinner</a></li>
+              <li><a href="/search.html?Drinks">Drinks</a></li>
+              <li><a href="/search.html?c_General">General</a></li>
+              <li><a href="/search.html?Lunch">Lunch</a></li>
+              <li><a href="/search.html?Sauces">Sauces</a></li>
+              <li><a href="/search.html?Snacks">Snacks</a></li>
+              <li><a href="/search.html?Tapas">Tapas</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Shop</h6>
+            <ul>
+              <li><a href="/shop/search.html?Cakes&cookies">Cakes & cookies</a></li>
+              <li><a href="/shop/search.html?Desserts">Desserts</a></li>
+              <li><a href="/shop/search.html?Drinks">Drinks</a></li>
+              <li><a href="/shop/search.html?Feasts">Feasts</a></li>
+              <li><a href="/shop/search.html?Meals">Meals</a></li>
+              <li><a href="/shop/search.html?Other">Other</a></li>
+              <li><a href="/shop/search.html?Riceset">Rice set </a></li>
+              <li><a href="/shop/search.html?Sauces">Sauces</a></li>
+              <li><a href="/shop/search.html?Snacks">Snacks</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Pages</h6>
+            <ul>
+              <li><a href="/about-us.html">About us</a></li>
+              <li><a href="/contact-us.html">Contact us</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+              <li>
+                <a href="/terms-and-condition.html">Term and conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Get in touch</h6>
+            <a href="https://www.instagram.com/depotbuk.k/"
+              ><img src="/img/insta.png" alt="insta"
+            /></a>
+            <a href="https://www.facebook.com/Depot-BukK-240741843161215/"
+              ><img src="/img/fb.png" alt="fb"
+            /></a>
+            <a href="https://wa.me/0412477138"
+              ><img src="/img/whatsapp.png" alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

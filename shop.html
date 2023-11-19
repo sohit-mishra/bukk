@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Bukk</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo"><img src="./img/logo.png" alt="logo" /></a>
+        <a href="javascript:void(0);" class="menu_bar" onclick="menuBar()"><i class="fa-solid fa-bars"></i></a>
+        <div class="nav_right_side">
+          <ol>
+            <li><a href="./">Home</a></li>
+            <li><a href="./search.html">Recipes</a></li>
+            <li><a href="./social.html">Social</a></li>
+            <li><a href="./catering.html">Catering</a></li>
+            <li><a href="./shop.html" class="active">Shop</a></li>
+          </ol>
+
+          <div class="login_btn">
+            <a href="./login.html">Login</a>
+            <a href="./signup.html" class="active">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="social">
+      <div class="container">
+        <div class="shop_header">
+          <div class="search_bar">
+            <input type="search" placeholder="Search user ..." value />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="cart_count">
+            <i class="fa-brands fa-opencart"></i> <span>0</span>
+          </div>
+        </div>
+        <div class="shop_header_cat">
+          <div class="leftside">
+            <h2>Categories</h2>
+            <ul>
+              <li>
+                <a href="./shop/search.html?Cakes&cookies"
+                  ><img src="./img/category.png" alt="" />Cakes & cookies</a
+                >
+              </li>
+              <li>
+                <a href="./shop/search.html?Desserts"><img src="./img/category.png" alt="" />Desserts</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Drinks"><img src="./img/category.png" alt="" />Drinks</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Feasts"><img src="./img/category.png" alt="" />Feasts</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Meals"><img src="./img/category.png" alt="" />Meals</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Other"><img src="./img/category.png" alt="" />Other</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Riceset"><img src="./img/category.png" alt="" />Rice set</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Sauces"><img src="./img/category.png" alt="" />Sauces</a>
+              </li>
+              <li>
+                <a href="./shop/search.html?Snacks"><img src="./img/category.png" alt="" />Snacks</a>
+              </li>
+            </ul>
+          </div>
+          <div class="righttside">
+            <div class="slidefades slide1">
+              <a href="./shop/banner/5d7f4024-b106-4822-a40e-ceabea5ceb7d.html">
+              <img src="./img/slideshow1.png" alt="" /></a>
+            </div>
+            <div class="slidefades slide2" style="display: none;">
+              <a href="./shop/banner/75eb0bde-14b3-452f-bab3-071051ee5219.html">
+              <img src="./img/slideshow2.jpeg" alt="" /></a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="dot_caption">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="related_shop">
+          <h2>Related Products</h2>
+          <div class="shop_row shop_prdouct">
+            <a href="./shop/9f91aedd-c537-4d87-bdc1-3fd828654038.html" class="shop_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+              <h5>Sweet Soy Pork Knuckle (Chu Kiok)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$25.00</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/53585825-b179-433b-9b83-db91abcf17fb.html" class="shop_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+              <h5>Sambal Garlic (Sambal Bawang)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$4.99</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/c405c63c-1760-4671-bb81-24fa3886fbf7.html" class="shop_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+              <h5>Aromatic Fried Chicken with Kremes (Ayam Kremes)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$25.00</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/c9d8282f-fd2e-4922-8aa6-e32daea60ef3.html" class="shop_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+              <h5>Sambal Garlic Super Spicy (Sambal Bawang Puedes)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$9.99</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/65de2bad-2ab2-4430-9efa-de379f308e61.html" class="shop_card">
+              <img src="./img/shop1.jpg" alt="" />
+              <h5>Fried Stuffed Tofu (Pack 5) (Tahu Isi)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$17.50</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/c7d075be-c360-4647-ae6d-ce916799ff18.html" class="shop_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+              <h5>Triple-cooked Pork in Ham Choi (Ham Choi Kon)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$25.00</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./shop/3eaf3a9d-529d-4213-850e-fbae286f7b05.html" class="shop_card">
+              <img src="./img/shop1.jpg" alt="" />
+              <h5>Fried Vermicelli with Prawn (Bihun Goreng Udang)
+              </h5>
+              <div class="star_rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="price_desc">
+                <p>$15.00</p>
+                <button>
+                  Add to cart <i class="fa-brands fa-opencart"></i>
+                </button>
+              </div>
+            </a>
+
+            <div class="slidearrow">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="browser_product">
+          <h3>Browse Other Products</h3>
+          <div class="product_row">
+            <a  href ="./shop/a55fe26b-e5ce-4361-812f-f7e9e81216ad.html" class="product_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+
+              <div class="product_card_desc">
+                <h5>
+                  Cutlery Pack (Paket Peralatan Makan)
+                </h5>
+                <div class="star_rating">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="price_desc">
+                  <p>$1.00</p>
+                  <button>
+                    Add to cart <i class="fa-brands fa-opencart"></i>
+                  </button>
+                </div>
+              </div>
+            </a>
+
+            <a href="./shop/5a915bf8-81b5-4ee0-adb5-0171be77c262.html" class="product_card">
+              <img src="./img/logo_transparent_background_2.png" alt="" />
+
+              <div class="product_card_desc">
+                <h5>
+                  Container 500ml (Pack of 10)
+                </h5>
+                <div class="star_rating">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="price_desc">
+                  <p>$8.00</p>
+                  <button>
+                    Add to cart <i class="fa-brands fa-opencart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="desk_cart">
+          <div class="box">
+            <i class="fa-brands fa-opencart"></i>
+            <span>0</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_row">
+          <div class="foot_col">
+            <img class="brand_img" src="./img/logo.png" alt="brand logo" />
+            <ul class="brand_logo">
+              <li>
+                <img src="./img/mail.svg" alt="mail" />contactus@bukk.com.au
+              </li>
+              <li><img src="./img/phone.svg" alt="phone" />+61 412 477 138</li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Cuisine</h6>
+            <ul>
+              <li><a href="./search.html?t_General">General</a></li>
+              <li><a href="./search.html?Non_Vegan">Non-Vegan</a></li>
+              <li><a href="./search.html?Vegan">Vegan</a></li>
+              <li><a href="./search.html?Vegetarian">Vegetarian</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Meals</h6>
+            <ul>
+              <li><a href="./search.html?Breakfast">Breakfast</a></li>
+              <li><a href="./search.html?Brunch">Brunch</a></li>
+              <li><a href="./search.html?Desert">Desert</a></li>
+              <li><a href="./search.html?Dinner">Dinner</a></li>
+              <li><a href="./search.html?Drinks">Drinks</a></li>
+              <li><a href="./search.html?c_General">General</a></li>
+              <li><a href="./search.html?Lunch">Lunch</a></li>
+              <li><a href="./search.html?Sauces">Sauces</a></li>
+              <li><a href="./search.html?Snacks">Snacks</a></li>
+              <li><a href="./search.html?Tapas">Tapas</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Shop</h6>
+            <ul>
+              <li><a href="./shop/search.html?Cakes&cookies">Cakes & cookies</a></li>
+              <li><a href="./shop/search.html?Desserts">Desserts</a></li>
+              <li><a href="./shop/search.html?Drinks">Drinks</a></li>
+              <li><a href="./shop/search.html?Feasts">Feasts</a></li>
+              <li><a href="./shop/search.html?Meals">Meals</a></li>
+              <li><a href="./shop/search.html?Other">Other</a></li>
+              <li><a href="./shop/search.html?Riceset">Rice set </a></li>
+              <li><a href="./shop/search.html?Sauces">Sauces</a></li>
+              <li><a href="./shop/search.html?Snacks">Snacks</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Pages</h6>
+            <ul>
+              <li><a href="./about-us.html">About us</a></li>
+              <li><a href="./contact-us.html">Contact us</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li>
+                <a href="./terms-and-condition.html">Term and conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Get in touch</h6>
+            <a href="https://www.instagram.com/depotbuk.k/"
+              ><img src="./img/insta.png" alt="insta"
+            /></a>
+            <a href="https://www.facebook.com/Depot-BukK-240741843161215/"
+              ><img src="./img/fb.png" alt="fb"
+            /></a>
+            <a href="https://wa.me/0412477138"
+              ><img src="./img/whatsapp.png" alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

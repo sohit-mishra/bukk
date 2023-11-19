@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Bukk</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo"><img src="./img/logo.png" alt="logo" /></a>
+         <a href="javascript:void(0);" class="menu_bar" onclick="menuBar()"><i class="fa-solid fa-bars"></i></a>
+        <div class="nav_right_side">
+          <ol>
+            <li><a href="./">Home</a></li>
+            <li><a href="./search.html">Recipes</a></li>
+            <li><a href="./social.html">Social</a></li>
+            <li><a href="./catering.html">Catering</a></li>
+            <li><a href="./shop.html" class="active">Shop</a></li>
+          </ol>
+
+          <div class="login_btn">
+            <a href="./login.html">Login</a>
+            <a href="./signup.html" class="active">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="login">
+      <div
+        class="page_bg"
+        style="background-image: url(./img/subscribe-bg.jpg)"
+      >
+        <h2>Sign Up</h2>
+      </div>
+      <div class="signup_card">
+        <div class="sign_content">
+          <h2>Why should you<span> sign up</span></h2>
+
+          <div class="features">
+            <div class="box">
+              <img src="./img/subs.png" alt="subs" />
+              <div class="content">
+                <h3>Subscribe</h3>
+                <p>
+                  Subscribe and get recipe from your Favourite cuisine in your
+                  inbox
+                </p>
+              </div>
+            </div>
+              <div class="box">
+                <img src="./img/cut.png" alt="cut"/>
+                <div class="content">
+                  <h3>View and Contribute
+                  </h3>
+                  <p>
+                    You can contribute and add your own recipes
+                  </p>
+                </div>
+                </div>
+                <div class="box">
+                  <img src="./img/menu.png" alt="menu"/>
+                  <div class="content">
+                    <h3>Favorite list
+                    </h3>
+                    <p>
+                      Keep your favourite recipes at one place
+                    </p>
+                  </div>
+                  </div>
+
+            </div>
+          </div>
+        <form action="">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" required/>
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" required/>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required/>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required/>
+          <label for="conf_passowrd">Confirm password</label>
+          <input type="password" name="conf_password" id="conf_password" required/>
+          <label class="cust_checkbox"
+                >I accept<a href="/"> Terms & Conditions</a> &<a href="/"> Privacy Policy</a>
+                <input type="checkbox" />
+                <span class="checkmark"></span> 
+                </label>
+          <button class="signbtn" onclick="checkPass()" onclick="errorshow()">Submit</button>
+          <div class="social_login">
+            or
+            <div>
+              <img src="./img/facebook.png" alt="facebook"/>
+              <img src="./img/twittr.png" alt="twittr"/>
+              <img src="./img/google.png" alt="google"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_row">
+          <div class="foot_col">
+            <img class="brand_img" src="./img/logo.png" alt="brand logo" />
+            <ul class="brand_logo">
+              <li>
+                <img src="./img/mail.svg" alt="mail" />contactus@bukk.com.au
+              </li>
+              <li><img src="./img/phone.svg" alt="phone" />+61 412 477 138</li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Cuisine</h6>
+            <ul>
+              <li><a href="./search.html?t_General">General</a></li>
+              <li><a href="./search.html?Non_Vegan">Non-Vegan</a></li>
+              <li><a href="./search.html?Vegan">Vegan</a></li>
+              <li><a href="./search.html?Vegetarian">Vegetarian</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Meals</h6>
+            <ul>
+              <li><a href="./search.html?Breakfast">Breakfast</a></li>
+              <li><a href="./search.html?Brunch">Brunch</a></li>
+              <li><a href="./search.html?Desert">Desert</a></li>
+              <li><a href="./search.html?Dinner">Dinner</a></li>
+              <li><a href="./search.html?Drinks">Drinks</a></li>
+              <li><a href="./search.html?c_General">General</a></li>
+              <li><a href="./search.html?Lunch">Lunch</a></li>
+              <li><a href="./search.html?Sauces">Sauces</a></li>
+              <li><a href="./search.html?Snacks">Snacks</a></li>
+              <li><a href="./search.html?Tapas">Tapas</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Shop</h6>
+            <ul>
+              <li><a href="./shop/search.html?Cakes&cookies">Cakes & cookies</a></li>
+              <li><a href="./shop/search.html?Desserts">Desserts</a></li>
+              <li><a href="./shop/search.html?Drinks">Drinks</a></li>
+              <li><a href="./shop/search.html?Feasts">Feasts</a></li>
+              <li><a href="./shop/search.html?Meals">Meals</a></li>
+              <li><a href="./shop/search.html?Other">Other</a></li>
+              <li><a href="./shop/search.html?Riceset">Rice set </a></li>
+              <li><a href="./shop/search.html?Sauces">Sauces</a></li>
+              <li><a href="./shop/search.html?Snacks">Snacks</a></li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Pages</h6>
+            <ul>
+              <li><a href="./about-us.html">About us</a></li>
+              <li><a href="./contact-us.html">Contact us</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li>
+                <a href="./terms-and-condition.html">Term and conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="foot_col">
+            <h6>Get in touch</h6>
+            <a href="https://www.instagram.com/depotbuk.k/"
+              ><img src="./img/insta.png" alt="insta"
+            /></a>
+            <a href="https://www.facebook.com/Depot-BukK-240741843161215/"
+              ><img src="./img/fb.png" alt="fb"
+            /></a>
+            <a href="https://wa.me/0412477138"
+              ><img src="./img/whatsapp.png" alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+ <div class="page_error">
+      <div class="showerror">
+      <p>password:both password does not match</p>
+      <span onclick="erhide()"><i class="fa-solid fa-xmark"></i></span>
+      <div class="progress_bar"></div></div>
+    </div>
+
+    
+    <script>
+      function checkPass() {
+  var password = document.getElementById("password").value;
+  var conf_password = document.getElementById("conf_password").value;
+  if (password != conf_password) {
+   var error =  document.getElementsByClassName("page_error");
+   error.style.display = "block";
+  } 
+}
+
+function erhide(){
+  var s = document.querySelector(".page_error");
+  s.style.display = "none";
+}
+
+    </script>
+
+   
+  </body>
+</html>
